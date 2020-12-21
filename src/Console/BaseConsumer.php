@@ -8,7 +8,7 @@ use NsqMessage;
 
 abstract class BaseConsumer extends Command
 {
-    public final function handle()
+    public function handle()
     {
         $nsq = resolve(NsqConsumerContract::class);
 
