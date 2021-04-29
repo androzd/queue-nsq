@@ -12,7 +12,7 @@ You can configure with env variables.
 
 If you need more options to replace, you can publish and edit config file:
 ```shell script
-php artisan vendor:publish --provider="Androzd\QueueNsq\QueueServiceProvider" --tag="config"
+php artisan vendor:publish --provider="Androzd\QueueNsq\QueuesServiceProvider" --tag="config"
 ```
 
 #### Produce new Nsq message:
