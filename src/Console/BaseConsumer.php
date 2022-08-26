@@ -16,9 +16,9 @@ abstract class BaseConsumer extends Command
             $this->getTopic(),
             $this->getChannel(),
             function(NsqMessage $nsqMessage, $bev) {
-                $this->warn(sprintf('[%s] Processing [%s]', now()->format('Y-m-d H:i:s'), $nsqMessage->messageId));
+                // $this->warn(sprintf('[%s] Processing [%s]', now()->format('Y-m-d H:i:s'), $nsqMessage->messageId));
                 $this->process($nsqMessage, $bev);
-                $this->info(sprintf('[%s] Processed [%s]', now()->format('Y-m-d H:i:s'), $nsqMessage->messageId));
+                // $this->info(sprintf('[%s] Processed [%s]', now()->format('Y-m-d H:i:s'), $nsqMessage->messageId));
             }
         );
     }
